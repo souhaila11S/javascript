@@ -1,40 +1,39 @@
+let livres = ["L'Étranger", "Le Petit Prince", "Les Misérables"];
+console.log("Tableau initial :", livres);
 
-let fruits = ["pomme", "banane", "cerise"];
-console.log("Tableau initial :", fruits);
 
-// 2. Ajouter et supprimer
-fruits.push("orange");
-console.log("Après push :", fruits);
+livres.push("Harry Potter");
+console.log("Après push :", livres);
 
-fruits.pop();
-console.log("Après pop :", fruits);
+livres.pop();
+console.log("Après pop :", livres);
 
-// 3. Modifier un élément
-fruits[1] = "kiwi";
-console.log("Après modification :", fruits);
 
-// 4. Ajouter au début et supprimer le premier
-fruits.unshift("fraise");
-console.log("Après unshift :", fruits);
+livres[1] = "Le Comte de Monte-Cristo";
+console.log("Après modification :", livres);
 
-fruits.shift();
-console.log("Après shift :", fruits);
 
-// 5. Utiliser splice pour insérer des éléments
-fruits.splice(1, 0, "ananas");
-console.log("Après splice :", fruits);
+livres.unshift("1984");
+console.log("Après unshift :", livres);
 
-// 6. Parcours du tableau
+
+livres.shift();
+console.log("Après shift :", livres);
+
+
+livres.splice(1, 0, "Don Quichotte");
+console.log("Après splice :", livres);
+
 console.log("Boucle for :");
-for (let i = 0; i < fruits.length; i++) {
-  console.log(i, fruits[i]);
+for (let i = 0; i < livres.length; i++) {
+  console.log(i, livres[i]);
 }
 
-// 7. Tableau d’objets
+
 let produits = [
-  { nom: "Stylo", prix: 5 },
-  { nom: "Cahier", prix: 15 },
-  { nom: "Crayon", prix: 3 },
+  { nom:"L'Étranger" , prix: 300 },
+  { nom:"Le Petit Prince" , prix: 200 },
+  { nom: "Les Misérables", prix: 340 },
 ];
 
 console.log("Liste des produits :");
