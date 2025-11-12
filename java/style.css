@@ -1,0 +1,158 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #e6f0ff;
+  color: #222;
+  margin: 20px;
+}
+
+nav {
+  margin-bottom: 25px;
+ 
+  font-weight: bold;
+}
+
+nav a {
+  text-decoration: none;
+  color: #1a3d8f;
+  margin: 0 12px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  text-decoration: underline;
+                                         
+}
+
+h1, h2, h3 {
+  font-family: 'Verdana', sans-serif;
+  color: #1a2e6f;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+#recherche {
+  padding: 8px;
+  border: 1px solid #416287;
+  border-radius: 6px;
+  width: 220px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+#recherche:focus {
+  outline: none;
+  border-color: #1a3d8f;
+  box-shadow: 0 0 8px rgba(26,61,143,0.4);
+}
+
+#liste-livres {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+
+}
+#stats{
+  font-weight:bold;
+  margin-top: 20px;
+}
+
+.card {
+  border: 1px solid #c1cbe0;
+  border-radius: 8px;
+  padding: 12px;
+  background: #c7d7f0;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 4px 4px 12px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+  margin-top: 0;
+  font-size: 16px;
+  color: #0d1b3c;
+}
+
+.card p {
+  margin: 4px 0;
+  font-size: 13px;
+  color: #1a2e6f;
+}
+
+
+button {
+  background: #353ddc;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #b02a37;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+form {
+  max-width: 380px;
+  margin: 25px auto;
+  padding: 15px;
+  background: #f0f5ff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: #1a2e6f;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #1a3d8f;
+  box-shadow: 0 0 8px rgba(26,61,143,0.3);
+}
+
+form button {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background: #1e7e34;
+  font-weight: bold;
+  font-size: 15px;
+}
