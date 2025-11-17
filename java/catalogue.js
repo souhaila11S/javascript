@@ -14,7 +14,7 @@ let bibliotheque = JSON.parse(localStorage.getItem("bibliotheque")) || [
     );
   
     livresFiltres.forEach(livre => {
-      const card = document.createElement("div");
+      const card = document.createElement("p");
       card.className = "card";
       card.innerHTML = `
         <h3>${livre.titre}</h3>
@@ -26,6 +26,7 @@ let bibliotheque = JSON.parse(localStorage.getItem("bibliotheque")) || [
       `;
       container.appendChild(card);
     });
+  
   
     afficherStats();
   }
